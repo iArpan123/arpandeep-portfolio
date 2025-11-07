@@ -95,7 +95,20 @@ export const projects = [
       "Pinecone retrieval delivering 95% accurate academic answers",
       "Redis session memory supports 1000+ multi turn chat interactions"
     ]
-  }
+  },
+  {
+  name: "EncrypTeach",
+  url: "https://github.com/iArpan123/EncrypTeach",
+  stack: ["Java", "JavaFX", "H2 Database", "BouncyCastle", "JUnit", "MVC Architecture"],
+  description:
+    "Secure, multi-role classroom management system with encrypted credentials, OTP-based authentication, and centralized admin control.",
+  highlights: [
+    "Implemented BouncyCastle AES/RSA encryption ensuring complete password security",
+    "Role-based dashboards for Super Admin, Professors, and Students with access validation",
+    "Comprehensive JUnit test coverage for encryption, authentication, and database integrity"
+  ]
+},
+
 ];
 
 export const skills = {
