@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        © {new Date().getFullYear()} Arpandeep Singh · Crafted with React and Framer Motion
+        © {new Date().getFullYear()} © 2025 Arpandeep Singh · Crafting AI-driven experiences with purpose
       </div>
     </footer>
   );
