@@ -1,4 +1,4 @@
-// Centralized data so you can tweak everything in one place.
+
 export const profile = {
   name: "Arpandeep Singh",
   title: "AI Engineer · Full-Stack Developer",
@@ -44,19 +44,7 @@ export const experience = [
       "Prototyped an AR product visualization app connecting computer vision with smooth 3D UI flows."
     ]
   },
-  {
-    role: "Frontend Developer Intern",
-    company: "SeeMe",
-    location: "Tempe, AZ",
-    date: "May 2024 – Jul 2024",
-    summary:
-      "Designed and developed a modern responsive web interface that elevated the company presence.",
-    highlights: [
-      "Built a React based frontend with component driven architecture and fluid responsive layouts.",
-      "Integrated a notification flow to alert internal teams on new signups.",
-      "Implemented smooth UI transitions and micro interactions to improve navigation and visual engagement."
-    ]
-  },
+ 
   {
     role: "Software Developer Intern",
     company: "VB Cosmetics Inc.",
@@ -68,6 +56,19 @@ export const experience = [
       "Built internal automation tools that replaced manual QA with AI assisted testing flows.",
       "Connected Amazon SP API with SYSPRO ERP using a Python middleware to sync live inventory data.",
       "Led data migration and analytics improvements across Salesforce and Power BI ecosystems."
+    ]
+  },
+   {
+    role: "Frontend Developer Intern",
+    company: "SeeMe",
+    location: "Tempe, AZ",
+    date: "May 2024 – July 2024",
+    summary:
+      "Designed and developed a modern responsive web interface that elevated the company presence.",
+    highlights: [
+      "Built a React based frontend with component driven architecture and fluid responsive layouts.",
+      "Integrated a notification flow to alert internal teams on new signups.",
+      "Implemented smooth UI transitions and micro interactions to improve navigation and visual engagement."
     ]
   }
 ];
@@ -100,7 +101,7 @@ export const projects = [
 export const skills = {
   languages: ["Python", "Java", "JavaScript", "C/C++", "SQL (PostgreSQL, MySQL)", "HTML/CSS"],
   frameworks: ["React", "Spring Boot", "FastAPI", "Node.js", "LangChain", "PyTorch", "TensorFlow", "Streamlit", "Flask"],
-  cloud: ["Firebase", "Supabase", "PostgreSQL", "MongoDB", "Pinecone", "GCP", "AWS"],
+  cloud: ["Firebase", "Supabase", "PostgreSQL", "MongoDB", "Pinecone", "Redis", "GCP", "AWS"],
   tools: ["Git", "Postman", "VS Code", "Cursor", "IntelliJ", "PyCharm", "Power BI", "Jupyter"],
   ai: ["OpenAI API", "GSC API", "Gmail API", "OAuth 2.0", "RESTful APIs", "Pinecone Vector DB", "LangChain RAG"]
 };

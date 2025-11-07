@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
-  /* Smooth, continuous gradient blend */
+  
   background:
     radial-gradient(1600px 1000px at 80% -20%, rgba(99, 230, 226, 0.15), transparent 70%),
     radial-gradient(1200px 800px at 0% 10%, rgba(167, 139, 250, 0.12), transparent 65%),
@@ -27,17 +27,17 @@ body {
 }
 
 
-/* Base links */
+
 a {
   color: var(--brand);
   text-decoration: none;
 }
 a:hover {
-  text-decoration: none; /* no underline anywhere */
+  text-decoration: none; 
   opacity: 0.9;
 }
 
-/* Layout basics */
+
 .container {
   width: 100%;
   max-width: var(--maxw);
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .section + .section {
-  padding-top: 60px; /* reduce top space between stacked sections */
+  padding-top: 60px; 
 }
 
 .section h2 {
@@ -105,7 +105,7 @@ a:hover {
   letter-spacing: -0.02em;
 }
 
-/* Navbar */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -170,7 +170,7 @@ a:hover {
   opacity: 1;
 }
 
-/* Footer */
+
 .footer {
   padding: 40px 0;
   color: var(--muted);
@@ -179,7 +179,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* Timeline */
+
 .timeline {
   position: relative;
   padding-left: 28px;
@@ -215,8 +215,7 @@ a:hover {
   background: var(--card-glass);
 }
 
-/* ==================== PROJECT CARDS ==================== */
-/* ==================== PROJECT CARDS ==================== */
+
 .project-card {
   position: relative;
   display: flex;
@@ -227,9 +226,9 @@ a:hover {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.07);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25),
-              0 0 30px rgba(99, 230, 226, 0.08); /* softer glow */
+              0 0 30px rgba(99, 230, 226, 0.08); 
   backdrop-filter: blur(10px);
-  transform: translateY(3px); /* move slightly down */
+  transform: translateY(3px); 
   transition:
     transform 0.8s cubic-bezier(0.19, 1, 0.22, 1),
     box-shadow 0.8s cubic-bezier(0.19, 1, 0.22, 1),
@@ -238,7 +237,7 @@ a:hover {
   color: var(--text);
 }
 
-/* Hover state: subtle lift with controlled glow */
+
 .project-card:hover {
   transform: translateY(-4px) scale(1.02);
   background: rgba(255, 255, 255, 0.04);
@@ -247,7 +246,7 @@ a:hover {
     0 8px 20px rgba(167, 139, 250, 0.1);
 }
 
-/* Title */
+
 .project-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -258,7 +257,7 @@ a:hover {
   color: var(--brand);
 }
 
-/* Stack pills */
+
 .project-stack {
   display: flex;
   flex-wrap: wrap;
@@ -278,7 +277,7 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* Description */
+
 .project-desc {
   color: var(--text);
   line-height: 1.6;
@@ -286,7 +285,7 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* Bullet points */
+
 .project-points {
   margin: 0;
   padding-left: 1rem;
@@ -299,7 +298,7 @@ a:hover {
   margin-bottom: 6px;
 }
 
-/* Remove underline inside cards */
+
 .project-card,
 .project-card:hover,
 .project-card * {
@@ -308,7 +307,6 @@ a:hover {
 }
 
 
-/* Skills hover */
 .skill-pill:hover {
   background: rgba(255, 255, 255, 0.12);
   transform: translateY(-2px);
@@ -317,7 +315,7 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Responsive */
+
 @media (max-width: 850px) {
   #skills .grid {
     grid-template-columns: 1fr !important;
@@ -338,7 +336,7 @@ a:hover {
 }
 
 
-/* ==================== LEADERSHIP CARDS ==================== */
+
 .leadership-card {
   position: relative;
   background: rgba(255, 255, 255, 0.03);
@@ -357,7 +355,7 @@ a:hover {
     background 0.5s ease;
 }
 
-/* Hover - soft lift and ambient glow */
+
 .leadership-card:hover {
   transform: translateY(-6px);
   background: rgba(255, 255, 255, 0.05);
@@ -366,7 +364,7 @@ a:hover {
     0 8px 20px rgba(167, 139, 250, 0.08);
 }
 
-/* Text styling */
+
 .leadership-card h4 {
   margin: 0 0 8px;
   font-size: 1rem;
@@ -385,7 +383,7 @@ a:hover {
   margin: 0;
 }
 
-/* Gentle light reflection for depth */
+
 .leadership-card::after {
   content: "";
   position: absolute;
@@ -399,7 +397,7 @@ a:hover {
   opacity: 1;
 }
 
-/* Optional subtle reveal animation */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -414,7 +412,7 @@ a:hover {
   animation: fadeUp 0.9s ease forwards;
 }
 
-/* ======= Leadership Visit Button ======= */
+
 .visit-btn {
   display: inline-block;
   margin-top: 14px;
@@ -435,15 +433,15 @@ a:hover {
   box-shadow: 0 8px 18px rgba(99, 230, 226, 0.25);
 }
 
-/* Fix: make "Visit Website" button clickable */
+
 .leadership-card::after {
-  pointer-events: none; /* allow clicks to pass through */
+  pointer-events: none; 
 }
 
 
-/* Fullscreen hero section */
+
 .hero-fullscreen {
-  height: 100vh; /* fill screen */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -452,7 +450,7 @@ a:hover {
   background: transparent;
 }
 
-/* Optional subtle fade into next section */
+
 .hero-fullscreen::after {
   content: "";
   position: absolute;
@@ -463,7 +461,7 @@ a:hover {
   pointer-events: none;
 }
 
-/* Scroll indicator */
+
 .scroll-indicator {
   position: absolute;
   bottom: 40px;
@@ -493,7 +491,7 @@ a:hover {
 }
 
 
-/* ==================== RESPONSIVE SKILLS GRID ==================== */
+
 @media (max-width: 1100px) {
   #skills .grid,
   #skills > div {
@@ -521,8 +519,7 @@ a:hover {
   }
 }
 
-/* ==================== MODERN RESPONSIVE NAVBAR ==================== */
-/* ==================== MODERN RESPONSIVE NAVBAR (ENHANCED VISUAL) ==================== */
+
 
 .hamburger {
   display: none;
@@ -554,7 +551,7 @@ a:hover {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ==================== MODERN GLASS MENU ==================== */
+
 .mobile-menu {
   position: absolute;
   top: 72px;
@@ -577,7 +574,7 @@ a:hover {
   animation: fadeSlideIn 0.35s ease forwards;
 }
 
-/* Soft glowing border gradient */
+
 .mobile-menu::before {
   content: "";
   position: absolute;
@@ -593,7 +590,7 @@ a:hover {
   pointer-events: none;
 }
 
-/* Hover animation for links */
+
 .mobile-link {
   color: var(--text);
   font-size: 0.95rem;
@@ -611,7 +608,6 @@ a:hover {
   transform: translateX(4px);
 }
 
-/* Subtle entry animation */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -623,7 +619,7 @@ a:hover {
   }
 }
 
-/* Desktop visibility rules */
+
 .desktop-only {
   display: flex;
 }

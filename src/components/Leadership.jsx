@@ -24,7 +24,7 @@ export default function Leadership() {
             </h4>
             <p>{l.impact}</p>
 
-            {/* Add buttons for ACEL–ASU and Startup Village */}
+            
             {l.org === "ACEL–ASU" && (
               <a
                 href="https://www.aceleaders.org/"

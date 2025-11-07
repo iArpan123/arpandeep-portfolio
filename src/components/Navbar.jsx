@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="brand">Arpandeep · Portfolio</div>
         </div>
 
-        {/* Desktop links */}
+        
         <div className="nav-links desktop-only">
           {links.map((l) => (
             <Link
@@ -36,7 +36,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Modern Hamburger */}
+        
         <div className={`hamburger ${open ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
@@ -44,7 +44,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Animated Mobile Dropdown */}
+      
       <AnimatePresence>
         {open && (
           <motion.div

@@ -13,7 +13,6 @@ export default function Hero() {
       }}
     >
       <div className="container">
-        {/* Status badge */}
         <motion.div
           className="badge"
           initial={{ opacity: 0, y: -10 }}
@@ -32,7 +31,7 @@ export default function Hero() {
           open to software roles
         </motion.div>
 
-        {/* Name */}
+        
         <motion.h1
           initial={{ opacity: 0, scale: 0.9, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -48,7 +47,7 @@ export default function Hero() {
           Hi, I'm <span className="hero-gradient">{profile.name}</span>
         </motion.h1>
 
-        {/* Subtitle */}
+        
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -63,7 +62,7 @@ export default function Hero() {
           Crafting <span className="hero-gradient">AI-driven</span> products that make technology feel effortless
         </motion.h2>
 
-        {/* Buttons */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,7 +83,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Optional scroll indicator */}
+      
       <div className="scroll-indicator">
         <div className="scroll-dot"></div>
       </div>
