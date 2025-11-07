@@ -56,13 +56,14 @@ export default function Skills() {
       subtitle="A toolkit spanning AI, full stack systems, and intelligent automation."
     >
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, minmax(320px, 1fr))",
-          gap: "1.5rem",
-          justifyContent: "center",
-        }}
-      >
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gap: "1.5rem",
+    justifyContent: "center",
+  }}
+>
+
         <Category title="Languages" items={skills.languages} />
         <Category title="Frameworks & Libraries" items={skills.frameworks} />
         <Category title="Cloud & Databases" items={skills.cloud} />
