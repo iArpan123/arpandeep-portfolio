@@ -520,3 +520,120 @@ a:hover {
     font-size: 1rem !important;
   }
 }
+
+/* ==================== MODERN RESPONSIVE NAVBAR ==================== */
+/* ==================== MODERN RESPONSIVE NAVBAR (ENHANCED VISUAL) ==================== */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==================== MODERN GLASS MENU ==================== */
+.mobile-menu {
+  position: absolute;
+  top: 72px;
+  right: 18px;
+  width: 220px;
+  background: radial-gradient(circle at 30% 20%, rgba(99, 230, 226, 0.12), rgba(167, 139, 250, 0.08))
+    rgba(9, 12, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(20px) saturate(160%);
+  box-shadow:
+    0 0 20px rgba(99, 230, 226, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  z-index: 9999;
+  animation: fadeSlideIn 0.35s ease forwards;
+}
+
+/* Soft glowing border gradient */
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(99, 230, 226, 0.3), rgba(167, 139, 250, 0.3));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Hover animation for links */
+.mobile-link {
+  color: var(--text);
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.mobile-link:hover {
+  background: linear-gradient(90deg, rgba(99, 230, 226, 0.12), rgba(167, 139, 250, 0.1));
+  color: var(--brand);
+  box-shadow: 0 0 12px rgba(99, 230, 226, 0.2);
+  transform: translateX(4px);
+}
+
+/* Subtle entry animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Desktop visibility rules */
+.desktop-only {
+  display: flex;
+}
+
+@media (max-width: 850px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
